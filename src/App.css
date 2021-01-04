@@ -3,6 +3,10 @@ h1 {
   text-align: center;
   margin-bottom: 40px;
 }
+.modalTitle{
+  justify-content:flex-start;
+  margin-bottom: 0px;
+}
 
 .frame {
   text-align: center;
@@ -39,4 +43,9 @@ h1 {
   font-size: 25px;
   font-family: "12롯데마트드림Light";
   color : white;
+}
+
+.modalText{
+  font-size: 20px;
+  font-family: "12롯데마트드림Light";
 }
