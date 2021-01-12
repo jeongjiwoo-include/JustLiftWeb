@@ -15,6 +15,7 @@ h1 {
 }
 
 .timer-wrapper {
+  height: 180px;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
