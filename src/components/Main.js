@@ -76,7 +76,7 @@ const Main = ({ match }) => {
       <br />
       <NewButton name="시간 초기화" onClick={() => { setStart(false); nextKey(); }} />
       <br />
-      <NewButton name="세트 초기화" onClick={() => { setStart(false); nextKey(); setCount(0); }} />
+      <NewButton name="세트 초기화" onClick={() => { setCount(0); }} />
       <br />
       <Link to={`/`}><NewButton name="시간 재설정" onClick={() => { }} /></Link>
 
