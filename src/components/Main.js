@@ -1,12 +1,8 @@
-import logo from '../logo.svg';
 import '../App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
-import SoundPlayer from 'react-soundplayer';
-import ReactModal from 'react-modal';
 import {Link} from 'react-router-dom';
 
-import Routes from './Routes'
 
 const renderTime = ({ remainingTime }) => {
   if (remainingTime === 0) {
@@ -48,9 +44,6 @@ const Main = ({ match }) => {
     )
   }
 
-
-
-
   return (
     <div className="frame">
       <h1>
@@ -59,7 +52,11 @@ const Main = ({ match }) => {
       <div className="timer-wrapper">
         <CountdownCircleTimer
           key={key}
-          onComplete={() => { setCount(count + 1); nextKey(); setStart(false); }}
+          onComplete={() => { 
+            setCount(count + 1); 
+            nextKey(); 
+            setStart(false); 
+          }}
           isPlaying={start}
           duration={sec}
           colors={[

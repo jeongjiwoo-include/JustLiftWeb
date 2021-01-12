@@ -1,5 +1,5 @@
 import '../App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -31,14 +31,14 @@ const Time = () => {
      
     return (
       <div className="frame">
-        <h1 className="modalTitle">시간설정</h1>
+        <h1>시간설정</h1>
         <br/>
-          <label className="modalText">원하는 초를 입력해주세요.</label>
+          <label className="modalText">원하는 시간을 초 단위로 입력해주세요.</label>
           <br/>
           <br/>
           <br/>
           <br/>
-          <input type="number" name="sec" placeholder="SECOND" value={sec} onChange={handleChange}/>
+          <input className="timeSet" type="number" name="sec" placeholder="SECOND" value={sec} onChange={handleChange}/>
           <br/>
           <br/>
           <br/>

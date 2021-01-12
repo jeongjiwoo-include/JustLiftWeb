@@ -49,4 +49,11 @@ h1 {
 .modalText{
   font-size: 20px;
   font-family: "12롯데마트드림Light";
+  height: 180px;
+}
+.timeSet{
+  font-size: 40px;
+  font-family: "12롯데마트드림Light";
+  height: 40px;
+  width: 100px;
 }
